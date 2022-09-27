@@ -1,0 +1,166 @@
+ h1,
+ h2,
+ h3,
+ h4,
+ h5 {
+     // font-family: 'DINP-R';
+     font-family: 'Quicksand', sans-serif !important;
+     margin-bottom: 1rem;
+     font-weight: bold;
+ }
+ 
+ h1 {
+     //  font-size: 60px;
+     font-size: 3rem;
+     &.center {
+         text-align: center;
+     }
+     span {
+         &.light {
+             font-weight: normal;
+         }
+         &.red {
+             color: #e24343;
+         }
+         &.purple {
+             color: #c243e2;
+         }
+         &.green {
+             color: #78e243;
+         }
+     }
+ }
+ 
+ h2 {
+     //  font-size: 48px;
+     font-size: 2.5rem;
+     &.center {
+         text-align: center;
+     }
+     &.subtitle {
+         font-weight: normal;
+         color: #5a5a5a;
+     }
+ }
+ 
+ h3 {
+     font-size: 2rem;
+ }
+ 
+ h4 {
+     font-size: 24px;
+ }
+ 
+ h5 {
+     font-size: 16px;
+ }
+ 
+ p {
+     font-size: 16px;
+     color: #414141;
+     letter-spacing: 0.5px;
+     margin-bottom: 1rem;
+     font-family: 'Nunito', sans-serif;
+ }
+ 
+ a {
+     color: $blue;
+     -webkit-transition: all 500ms ease;
+     -moz-transition: all 500ms ease;
+     -ms-transition: all 500ms ease;
+     -o-transition: all 500ms ease;
+     transition: all 500ms ease;
+     &:hover {
+         color: $black;
+         -webkit-transition: all 500ms ease;
+         -moz-transition: all 500ms ease;
+         -ms-transition: all 500ms ease;
+         -o-transition: all 500ms ease;
+         transition: all 500ms ease;
+     }
+ }
+ 
+ //  BUTTONS
+ .btn {
+     outline: none;
+     padding: 0.75rem 2.5rem;
+     margin: 1rem 0;
+     font-family: 'Nunito', sans-serif;
+     font-style: normal;
+     font-weight: 600;
+     font-size: 20px;
+     border: 0px;
+     color: #ffffff;
+     /* Purple Gradient Button */
+     background: linear-gradient(180deg, #BF98FF 14.29%, #7744CC 100%);
+     /* Drop 1234 */
+     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+     -webkit-transition: all 500ms ease;
+     -moz-transition: all 500ms ease;
+     -ms-transition: all 500ms ease;
+     -o-transition: all 500ms ease;
+     transition: all 500ms ease;
+     &.light {
+         background: linear-gradient(180deg, #FFFFFF 0%, #F4F6FF 47.14%, #C5D2FF 100%);
+         color: #7744CC;
+     }
+     &:hover {
+         cursor: pointer;
+         background-color: #7744CC;
+         color: $white;
+         background: linear-gradient(180deg, #7744CC 14.29%, #7744CC 100%);
+         -webkit-transition: all 500ms ease;
+         -moz-transition: all 500ms ease;
+         -ms-transition: all 500ms ease;
+         -o-transition: all 500ms ease;
+         transition: all 500ms ease;
+     }
+     &.outline {
+         background: $white;
+         border: 2px solid #7744CC;
+         color: #7744CC;
+         &:hover {
+             border: 2px solid $orange;
+             color: #fff;
+         }
+     }
+     &.round {
+         border-radius: 0.5rem;
+         border-radius: 12px;
+     }
+     &.capsule {
+         border-radius: 2rem;
+     }
+     &.icon {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: nowrap;
+         justify-content: space-around;
+         align-items: center;
+         padding: 0.5rem;
+         padding-right: 0.5rem;
+         .btn-lable {
+             padding: 0rem 0.5rem;
+         }
+         .btn-icon {
+             //  padding: 0rem 0.5rem;
+             background: #ffffff;
+             border-radius: 2rem;
+             padding: 0.25rem;
+         }
+     }
+     &.link {
+         background: transparent;
+         border: 0px;
+         color: $orange;
+     }
+     &.ollu-btn {
+         background-color: #421e7f;
+     }
+     &.teena-btn {
+         background-color: #683700;
+     }
+     &.weenu-btn {
+         background-color: #003b63;
+     }
+ }

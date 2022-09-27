@@ -1,0 +1,119 @@
+    main {
+        // margin-top: 76px;
+        // background: #ebebeb;
+        @media only screen and (max-width: $mobile-width) {
+            margin-top: 0px;
+        }
+    }
+    
+    .container {
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+    
+    section {
+        padding: 2rem 0px;
+        min-height: 100vh;
+        width: 100%;
+        // width: 100vw;
+        position: relative;
+        max-width: 1080px;
+        margin: 0 auto;
+        &.full {
+            max-width: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+        &.auto-height {
+            height: auto;
+            min-height: auto;
+        }
+        .sec-head {
+            margin: 0.5rem 0rem 2rem;
+        }
+        @media only screen and (max-width: 768px) {
+            min-height: auto;
+            padding: 2rem;
+        }
+        @media only screen and (max-width: $mobile-width) {
+            min-height: auto;
+            padding: 1rem;
+        }
+    }
+    
+    .no-pad {
+        padding: 0px;
+    }
+    
+    // #viewport {
+    //     overflow: hidden;
+    //     position: fixed;
+    //     height: 100%;
+    //     width: 100%;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     bottom: 0;
+    // }
+    // #scroll-container {
+    //     position: absolute;
+    //     overflow: hidden;
+    //     width: 100%;
+    // }
+    .crl {
+        padding: 3rem;
+        padding-left: 0px;
+        box-sizing: border-box;
+        &.c0 {
+            background: #ce243d;
+            height: 100%;
+            width: 100%;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+        &.c1 {
+            background: #00ade8;
+            height: 100%;
+            width: 100%;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+        &.c2 {
+            background: #f76d37;
+            height: 100%;
+            width: 100%;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+            position: relative;
+            img {
+                position: absolute;
+            }
+        }
+        &.c3 {
+            background: #ffc200;
+            height: 100%;
+            width: 100%;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+        &.c4 {
+            background: #ffffff;
+            height: 100vh;
+            padding-right: 50vw;
+            width: 100%;
+            // border-top-right-radius: 50%;
+            // border-bottom-right-radius: 50%;
+        }
+    }
+    
+    @media only screen and (max-width: 768px) {
+        html {
+            font-size: 14px;
+        }
+    }
+    
+    @media only screen and (max-width: $mobile-width) {
+        html {
+            font-size: 12px;
+        }
+    }
