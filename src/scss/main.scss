@@ -45,65 +45,34 @@
         padding: 0px;
     }
     
-    // #viewport {
-    //     overflow: hidden;
-    //     position: fixed;
-    //     height: 100%;
-    //     width: 100%;
-    //     top: 0;
-    //     left: 0;
-    //     right: 0;
-    //     bottom: 0;
-    // }
-    // #scroll-container {
-    //     position: absolute;
-    //     overflow: hidden;
-    //     width: 100%;
-    // }
-    .crl {
-        padding: 3rem;
-        padding-left: 0px;
-        box-sizing: border-box;
-        &.c0 {
-            background: #ce243d;
-            height: 100%;
-            width: 100%;
-            border-top-right-radius: 50%;
-            border-bottom-right-radius: 50%;
+    .loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: black;
+        color: white;
+        z-index: 9999;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        >div {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
         }
-        &.c1 {
-            background: #00ade8;
-            height: 100%;
-            width: 100%;
-            border-top-right-radius: 50%;
-            border-bottom-right-radius: 50%;
+        h1 {
+            font-size: 18px;
+            margin-bottom: 0px;
         }
-        &.c2 {
-            background: #f76d37;
-            height: 100%;
-            width: 100%;
-            border-top-right-radius: 50%;
-            border-bottom-right-radius: 50%;
-            position: relative;
-            img {
-                position: absolute;
-            }
-        }
-        &.c3 {
-            background: #ffc200;
-            height: 100%;
-            width: 100%;
-            border-top-right-radius: 50%;
-            border-bottom-right-radius: 50%;
-        }
-        &.c4 {
-            background: #ffffff;
-            height: 100vh;
-            padding-right: 50vw;
-            width: 100%;
-            // border-top-right-radius: 50%;
-            // border-bottom-right-radius: 50%;
-        }
+        .loader--text {}
     }
     
     @media only screen and (max-width: 768px) {

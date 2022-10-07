@@ -15,7 +15,16 @@ gsap.registerPlugin(ScrollTrigger, Draggable, Flip, MotionPathPlugin);
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+const loader = document.querySelector('.loader--text');
+console.log("loader", loader);
+const updateProgress = (instance) =>
+    loader.textContent = `${Math.round(instance.progressedCount * 100 / images.length)}%`;
 
+window.addEventListener('load', (event) => {
+    console.log('page is fully loaded');
+    gsap.to(document.querySelector('.loader'), { autoAlpha: 0 });
+    updateProgress
+});
 // var controller = new ScrollMagic.Controller();
 // var imagesLoaded = require('imagesloaded');
 
@@ -70,33 +79,3 @@ let tl2 = gsap.timeline({
 });
 
 tl2.fromTo("#h-scroll2", { x: "0%", }, { x: "-60%", });
-
-// add animations and labels to the timeline
-// tl.addLabel("start")
-//     .from(".box p", { scale: 0.3, rotation: 45, autoAlpha: 0 })
-//     .addLabel("color")
-//     .from(".box", { backgroundColor: "#28a92b" })
-//     .addLabel("spin")
-//     .to(".box", { rotation: 360 })
-//     .addLabel("end");
-
-// ScrollTrigger.create({
-//     trigger: "#h-scroll",
-//     start: "top top",
-//     endTrigger: "#otherID",
-//     end: "bottom 50%+=100px",
-
-//     onToggle: self => console.log("toggled, isActive:", self.isActive),
-//     onUpdate: self => {
-//         console.log("progress:", self.progress.toFixed(3), "direction:", self.direction, "velocity", self.getVelocity());
-//     }
-// });
-const loader = document.querySelector('.loader--text');
-const updateProgress = (instance) =>
-    loader.textContent = `${Math.round(instance.progressedCount * 100 / images.length)}%`;
-
-window.addEventListener('load', (event) => {
-    console.log('page is fully loaded');
-    gsap.to(document.querySelector('.loader'), { autoAlpha: 0 });
-    updateProgress
-});

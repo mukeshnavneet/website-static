@@ -1,18 +1,20 @@
- // Section: Elements
- .container {
-     max-width: 83rem;
-     width: 100%;
-     height: auto;
-     margin: 0 auto;
-     padding: 0 2rem;
+ //PROMO BANNER
+ .promo-banner {
+     background-color: rgb(255, 238, 0);
+     padding: 0.5rem 1rem;
+     .container {
+         //  background-color: antiquewhite;
+         p {
+             margin: 0px;
+         }
+     }
  }
  
- // Section: Navbar Menu
  .navbar {
      max-width: 100%;
      height: auto;
      margin: 0 auto;
-     padding: 0.75rem 0;
+     padding: 0 1rem;
      border: none;
      outline: none;
      //  color: var(--color-black);
@@ -23,12 +25,42 @@
          flex-direction: row;
          flex-wrap: wrap;
          justify-content: space-between;
+         align-content: center;
+         align-items: center;
          align-items: center;
          width: 100%;
          height: auto;
          margin: 0 auto;
          .main-logo {
              width: 120px;
+             //  background-color: black;
+         }
+         //  background-color: blue;
+         .menu {
+             //  background-color: $red;
+             .menu-inner {
+                 .menu-item {
+                     display: inline-block;
+                     .menu-link {
+                         font-family: inherit;
+                         font-size: 1rem;
+                         font-weight: 600;
+                         line-height: inherit;
+                         border: none;
+                         color: black;
+                         text-transform: uppercase;
+                         text-rendering: optimizeLegibility;
+                         transition: all 0.35s ease-in-out;
+                         padding: 0.5rem 1rem;
+                         display: inline-block;
+                     }
+                     &.active {
+                         .menu-link {
+                             background-color: aqua;
+                         }
+                     }
+                 }
+             }
          }
      }
      .burger {
@@ -84,26 +116,6 @@
                      transform: rotate(-45deg);
                  }
              }
-         }
-     }
-     .menu {
-         &-inner {
-             display: flex;
-             flex-direction: row;
-             justify-content: center;
-             align-items: center;
-             gap: 2rem;
-         }
-         &-link {
-             font-family: inherit;
-             font-size: 1rem;
-             font-weight: 600;
-             line-height: inherit;
-             border: none;
-             color: black;
-             text-transform: uppercase;
-             text-rendering: optimizeLegibility;
-             transition: all 0.35s ease-in-out;
          }
      }
  }
