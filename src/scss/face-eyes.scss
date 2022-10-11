@@ -1,0 +1,46 @@
+$faceSize: 150px;
+$eyeSize: 40px;
+$eyeBallSize: 15px;
+.faces {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    .face {
+        position: relative;
+        width: $faceSize;
+        height: $faceSize;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: orange;
+        .eyes {
+            position: relative;
+            top: 0px;
+            display: flex;
+            .eye {
+                position: relative;
+                width: $eyeSize;
+                height: $eyeSize;
+                display: block;
+                background: #fff;
+                border-radius: 50%;
+                margin: 0 15px;
+                padding: 10px;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: $eyeBallSize;
+                    height: $eyeBallSize;
+                    border-radius: 20px;
+                    background: #000;
+                    left: 25px;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+}

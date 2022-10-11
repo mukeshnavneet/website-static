@@ -1,0 +1,103 @@
+.sec_hero {
+    position: relative;
+    // max-height: 864px;
+    /* you can change height as per your requirement */
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px 100px;
+    background-color: #ccf1ff;
+}
+
+.hero_img {
+    max-width: 200px;
+    position: relative;
+    margin: 0 auto;
+    // background-color: rgb(235, 235, 235);
+}
+
+.hero_img img {
+    width: 100%;
+    position: absolute;
+    top: -8%;
+    // transform: rotate(-30deg) scale(1.2);
+}
+
+.item {
+    background-color: transparent !important;
+}
+
+.item_img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    overflow: hidden;
+    transform: rotate(0deg);
+    animation: img_morph 25s linear 0s infinite;
+    background-image: url("https://www.micelistudios.com/sandbox/scrolltrigger/imgs/burrrowing_owl_674x700.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+
+@keyframes img_morph {
+    0% {
+        border-radius: 45% 55% 62% 38%/53% 51% 49% 47%;
+    }
+    20% {
+        border-radius: 45% 55% 49% 51%/36% 51% 49% 64%;
+    }
+    40% {
+        border-radius: 60% 40% 57% 43%/47% 62% 38% 53%;
+    }
+    60% {
+        border-radius: 60% 40% 32% 68%/38% 36% 64% 62%;
+    }
+    70% {
+        border-radius: 60% 40% 57% 43%/47% 62% 38% 53%;
+    }
+    80% {
+        border-radius: 45% 55% 49% 51%/36% 51% 49% 64%;
+    }
+    100% {
+        border-radius: 45% 55% 62% 38%/53% 51% 49% 47%;
+    }
+}
+
+.line {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ff0000;
+    display: inline-block;
+    border-radius: 100%;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    animation: line_morph 12s linear 0s infinite reverse;
+}
+
+@keyframes line_morph {
+    0% {
+        border-radius: 45% 55% 62% 38%/53% 51% 49% 47%;
+        transform: rotate(15deg);
+    }
+    20% {
+        border-radius: 45% 55% 49% 51%/36% 51% 49% 64%;
+    }
+    40% {
+        border-radius: 60% 40% 57% 43%/47% 62% 38% 53%;
+    }
+    60% {
+        border-radius: 60% 40% 32% 68%/38% 36% 64% 62%;
+    }
+    70% {
+        border-radius: 60% 40% 57% 43%/47% 62% 38% 53%;
+    }
+    80% {
+        border-radius: 45% 55% 49% 51%/36% 51% 49% 64%;
+    }
+    100% {
+        border-radius: 45% 55% 62% 38%/53% 51% 49% 47%;
+        transform: rotate(0deg);
+    }
+}

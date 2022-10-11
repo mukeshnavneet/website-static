@@ -35,6 +35,7 @@ gsap.to(".circle", {
     yPercent: 5,
     ease: "none",
     scrollTrigger: {
+        // markers: true,
         trigger: ".clusterGreat",
         scrub: 1
     },
@@ -44,6 +45,7 @@ gsap.to(".dotsBlue", {
     yPercent: -10,
     ease: "none",
     scrollTrigger: {
+        // markers: true,
         trigger: ".clusterGreat",
         scrub: 1
     },
@@ -54,6 +56,7 @@ gsap.to(".owlHorned", {
     yPercent: 20,
     ease: "none",
     scrollTrigger: {
+        // markers: true,
         trigger: ".clusterGreat",
         scrub: 1
     },
@@ -64,7 +67,7 @@ gsap.to(".caption", {
     ease: "none",
     scrollTrigger: {
         trigger: ".clusterGreat",
-        // markers:true,
+        // markers: true,
         end: "bottom center",
         scrub: 1
     },
@@ -74,6 +77,7 @@ gsap.to(".clusterGreat", {
     yPercent: -5,
     ease: "none",
     scrollTrigger: {
+        // markers: true,
         trigger: ".clusterGreat",
         end: "bottom center",
         scrub: 1
@@ -94,7 +98,9 @@ gsap.to(".triangle", {
     ease: "none",
     scrollTrigger: {
         trigger: ".clusterBurrowing",
-        scrub: 1
+        scrub: 1,
+        // markers: true,
+        // markers: { startColor: "red", endColor: "blue", fontSize: "12px", fontWeight: "lite", indent: 20 },
     },
 });
 
@@ -103,6 +109,8 @@ gsap.to(".dotsWhite", {
     ease: "none",
     scrollTrigger: {
         trigger: ".clusterBurrowing",
+        // markers: true,
+
         scrub: 1
     },
 });
@@ -112,6 +120,8 @@ gsap.to(".owlBurrowing", {
     ease: "none",
     scrollTrigger: {
         trigger: ".clusterBurrowing",
+        // markers: true,
+
         scrub: 1
     },
 });
@@ -121,7 +131,7 @@ gsap.to(".captionBurrowing", {
     ease: "none",
     scrollTrigger: {
         trigger: ".clusterBurrowing",
-        // markers:true,
+        // markers: true,
         end: "bottom center",
         scrub: 1
     },
@@ -132,7 +142,7 @@ gsap.to(".clusterBurrowing", {
     ease: "none",
     scrollTrigger: {
         trigger: ".clusterBurrowing",
-        // markers:true,
+        // markers: true,
         end: "bottom center",
         scrub: 1
     },

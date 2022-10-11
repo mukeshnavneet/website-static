@@ -8,9 +8,13 @@ import blogs from "../blogs.html";
 
 /* Demo JS */
 import './demo.js';
+import './page-scroll';
 import './header.js';
 import './products.js';
 import './cursor.js';
+import './face-eyes.js';
+import './3d-card.js';
+import './timescale';
 // import './banner.js';
 // import './wave.js';
 // import './essentials-slider.js';

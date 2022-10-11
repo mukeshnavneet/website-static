@@ -80,6 +80,7 @@
         "imagesloaded": "^4.1.4",
         "jquery": "^3.6.0",
         "jquery-validation": "^1.19.5",
+        "matter-js": "^0.18.0",
         "rive-js": "0.7.16",
         "scrollmagic": "^2.0.8",
         "smooth-scrollbar": "^8.7.4",
