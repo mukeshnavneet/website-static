@@ -1,7 +1,7 @@
 {
     "build": {
         "image": "node:slim",
-        "command": "npm run build && echo $SOME_ENV",
+        "command": "npm run production && echo $SOME_ENV",
         "publicDir": "dist",
         "baseDir": "",
         "environment": {
