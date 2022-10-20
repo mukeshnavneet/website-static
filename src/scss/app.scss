@@ -37,19 +37,21 @@
 
 /* Main Page styles */
 
-@import 'header';
 @import 'main';
+@import 'header';
+@import 'banner';
 @import 'products';
 @import 'cursor';
 // @import 'login';
-// @import 'banner';
 // @import 'game';
 // @import 'home';
 @import 'cards';
 @import 'face-eyes';
 @import 'morph';
 // @import 'collage';
-// @import 'hero-slider';
+@import 'hero-slider';
+@import 'about-page';
+@import 'careers-page';
 // @import 'gsap-slider';
 // @import 'essentials-slider';
 // @import 'intro-slider';

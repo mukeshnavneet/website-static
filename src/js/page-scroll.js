@@ -1,16 +1,7 @@
-// // typical import
-// import gsap from "gsap";
-
-// // // get other plugins:
-// import ScrollTrigger from "gsap/ScrollTrigger";
-// import Flip from "gsap/Flip";
-// import Draggable from "gsap/Draggable";
-
 // // or all tools are exported from the "all" file (excluding members-only plugins):
 import { gsap, ScrollTrigger, Draggable, MotionPathPlugin, Flip } from "gsap/all";
-// import ScrollMagic from 'scrollmagic'
-// don't forget to register plugins
 gsap.registerPlugin(ScrollTrigger, Draggable, Flip, MotionPathPlugin);
+
 // Section Pinning
 gsap.utils.toArray(".sec").forEach((section) => {
     // Check if section has horizontal scrolling
@@ -19,9 +10,7 @@ gsap.utils.toArray(".sec").forEach((section) => {
         const card = section.querySelector(".section__card");
 
         gsap.to(cards, {
-            x: () => {
-                return -cards.scrollWidth + card.offsetWidth;
-            },
+            x: () => { return -cards.scrollWidth + card.offsetWidth; },
             ease: "none",
             scrollTrigger: {
                 trigger: section,
@@ -33,14 +22,42 @@ gsap.utils.toArray(".sec").forEach((section) => {
                 anticipatePin: 1
             }
         });
+
         // Use standard vertical scroll pinning
     } else {
         ScrollTrigger.create({
-            markers: true,
+            // markers: true,
             trigger: section,
             start: () => "top top",
-            pin: true,
+            // pin: true,
             anticipatePin: 1
         });
     }
 });
+
+
+let links = gsap.utils.toArray(".menu-inner .menu-item a");
+if (links > 0) {
+    links.forEach(a => {
+        let element = document.querySelector(a.getAttribute("href")),
+            linkST = ScrollTrigger.create({
+                trigger: element,
+                start: "top top"
+            });
+        ScrollTrigger.create({
+            trigger: element,
+            start: "top center",
+            end: "bottom center",
+            onToggle: self => self.isActive && setActive(a)
+        });
+        a.addEventListener("click", e => {
+            e.preventDefault();
+            gsap.to(window, { duration: 1, scrollTo: linkST.start, overwrite: "auto" });
+        });
+    });
+}
+
+function setActive(link) {
+    links.forEach(el => el.classList.remove("active"));
+    link.classList.add("active");
+}

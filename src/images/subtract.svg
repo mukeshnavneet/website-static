@@ -1,0 +1,9 @@
+<svg width="1440" height="720" viewBox="0 0 1440 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+    <clipPath id="myClip">
+    <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M1440 0H0V720H1440V0ZM787.968 98.1503C574.61 104.971 217.534 250.593 400.51 451.122C629.23 701.783 1078.99 645.512 1088.38 481.815C1097.76 318.118 1001.33 91.3296 787.968 98.1503Z"
+        fill="black" />
+        </clipPath>
+  </defs>
+</svg>

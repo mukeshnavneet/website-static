@@ -1,0 +1,72 @@
+.career-sec01 {
+    padding-top: 50px;
+    background: rgb(216, 216, 216);
+    .ball {
+        width: 40px;
+        height: 40px;
+        background: yellow;
+        border-radius: 50px;
+    }
+    svg {
+        width: 100%;
+        // height: 100%;
+        path {
+            // width: 100%;
+        }
+    }
+    .mascot {
+        position: absolute;
+        bottom: 150px;
+    }
+}
+
+.career-sec02 {
+    min-height: 100vh;
+    .scroll2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        // background: #ccc;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 10px;
+        &.reverce {}
+        .img-holder {
+            min-width: 150px;
+            width: 50%;
+        }
+        >div {
+            padding: 10px;
+        }
+    }
+}
+
+.career-sec03 {
+    min-height: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    // background-color: aquamarine;
+    .text-one {
+        font-size: 60px;
+    }
+    .text-two {
+        font-size: 36px;
+    }
+    .text-three {
+        font-size: 24px;
+    }
+}
+
+.career-sec04 {
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(127, 206, 255);
+}

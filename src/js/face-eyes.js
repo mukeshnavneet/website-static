@@ -21,15 +21,19 @@ document.querySelector('body').addEventListener('mousemove', (e) => {
     const mouseX = e.clientX;
     const mouseY = e.clientY;
     const faceBox = document.getElementById('face');
-    const rekt = faceBox.getBoundingClientRect();
-    const faceBoxX = rekt.left + rekt.width / 2;
-    const faceBoxY = rekt.top + rekt.height / 2;
-    const angleDeg = angle(mouseX, mouseY, faceBoxX, faceBoxY);
-    let eye = document.querySelectorAll('.eye');
+    // console.log("faceBox", faceBox);
+    if (faceBox !== null) {
 
-    eye.forEach((eye) => {
-        eye.style.transform = `rotate(${-90 + angleDeg}deg)`
-    })
+        const rekt = faceBox.getBoundingClientRect();
+        const faceBoxX = rekt.left + rekt.width / 2;
+        const faceBoxY = rekt.top + rekt.height / 2;
+        const angleDeg = angle(mouseX, mouseY, faceBoxX, faceBoxY);
+        let eye = document.querySelectorAll('.eye');
+
+        eye.forEach((eye) => {
+            eye.style.transform = `rotate(${-90 + angleDeg}deg)`
+        })
+    }
 
 });
 

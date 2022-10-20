@@ -26,25 +26,25 @@ Swiper.use([Navigation, Pagination]);
 // The Slideshow class.
 
 /* SWIPER */
-var swiper = new Swiper(".essentials-slider-container", {
-    loop: true,
-    crossFade: true,
-    // If we need pagination
-    pagination: {
-        el: '.essentials-slider-container .swiper-pagination',
-    },
+// var swiper = new Swiper(".essentials-slider-container", {
+//     loop: true,
+//     crossFade: true,
+//     // If we need pagination
+//     pagination: {
+//         el: '.essentials-slider-container .swiper-pagination',
+//     },
 
-    // Navigation arrows
-    navigation: {
-        nextEl: '.essentials-slider-container .swiper-button-next',
-        prevEl: '.essentials-slider-container .swiper-button-prev',
-    },
+//     // Navigation arrows
+//     navigation: {
+//         nextEl: '.essentials-slider-container .swiper-button-next',
+//         prevEl: '.essentials-slider-container .swiper-button-prev',
+//     },
 
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
-});
+//     // And if we need scrollbar
+//     scrollbar: {
+//         el: '.swiper-scrollbar',
+//     },
+// });
 
 /* GSAP */
 let tl = gsap.timeline();

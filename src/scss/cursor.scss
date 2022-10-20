@@ -104,9 +104,9 @@ body #cursor.active strong span.word span.char:before {
 }
 
 body svg {
-    position: absolute;
-    width: 0;
-    height: 0;
+    // position: absolute;
+    // width: 0;
+    // height: 0;
 }
 
 body #close strong.cursor-circle {
@@ -293,4 +293,10 @@ body #cursor.active strong span.word span.char:before {
 //BUTTON and LINKS
 body #cursor.active strong {
     box-shadow: inset 0 0 0 20px #ffaa00;
+}
+
+@media only screen and (max-width: $mobile-width) {
+    body #cursor {
+        display: none;
+    }
 }

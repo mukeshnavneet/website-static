@@ -65,7 +65,7 @@ for (let i = 0; i < cards.length; i++) {
         "click",
         function(i) {
             body.classList.add("active");
-            iframe.setAttribute("src", frames[i]);
+            // iframe.setAttribute("src", frames[i]);
             let penDebug = frames[i];
             let penFull = penDebug.replace("debug", "pen");
             penLink.setAttribute("href", penFull);

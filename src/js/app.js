@@ -20,5 +20,7 @@ import './timescale';
 // import './essentials-slider.js';
 // import './intro-slider.js';
 // import './gsap-slider.js';
-// import './hero-slider.js';
+import './hero-slider.js';
 // import './main-scroll.js';
+import './about-page.js';
+import './careers-page.js';

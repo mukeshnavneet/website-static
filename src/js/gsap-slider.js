@@ -13,24 +13,24 @@ import 'swiper/css';
 // The Slideshow class.
 
 /* SWIPER */
-var swiper = new Swiper(".swiper-container", {
-    loop: true,
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-    },
+// var swiper = new Swiper(".swiper-container", {
+//     loop: true,
+//     // If we need pagination
+//     pagination: {
+//         el: '.swiper-pagination',
+//     },
 
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+//     // Navigation arrows
+//     navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev',
+//     },
 
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
-});
+//     // And if we need scrollbar
+//     scrollbar: {
+//         el: '.swiper-scrollbar',
+//     },
+// });
 
 /* GSAP */
 // let tl = gsap.timeline();
