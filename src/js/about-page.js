@@ -5,9 +5,9 @@ import { gsap, Power1, ScrollTrigger, Draggable, MotionPathPlugin, Flip, ScrollT
 gsap.registerPlugin(ScrollTrigger, Draggable, Flip, MotionPathPlugin, ScrollToPlugin);
 
 //gsap.fromTo(".box", {opacity: 0}, {opacity: 0.5, duration: 1});
-gsap.fromTo(".green-crl", { translateX: -200 }, { duration: 1, yPercent: 200 });
-gsap.fromTo(".yellow-crl", { translateX: 200 }, { duration: 1, yPercent: 200 });
-gsap.fromTo(".blue-crl", { translateX: 0 }, { duration: 1, yPercent: 200 });
+gsap.fromTo(".green-crl", { translateX: -200 }, { duration: 0.75, yPercent: 200 });
+gsap.fromTo(".blue-crl", { translateX: 0 }, { duration: 0.5, yPercent: 200 });
+gsap.fromTo(".yellow-crl", { translateX: 200 }, { duration: 0.75, yPercent: 200 });
 
 // gsap.set(".green-crl", { yPercent: 200 });
 // gsap.set(".yellow-crl", { yPercent: 200 });

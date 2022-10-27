@@ -37,7 +37,7 @@
             padding: 2rem;
         }
         @media only screen and (max-width: $mobile-width) {
-            min-height: auto;
+            min-height: 100vh;
             padding: 1rem;
         }
     }

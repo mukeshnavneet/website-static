@@ -105,7 +105,13 @@
     background-size: 100%;
 }
 
-.bloc {
+.card-wrapper.red-box {
+    .block {
+        background: red;
+    }
+}
+
+.block {
     height: 100%;
     width: 100%;
     // background: url(https://desktopography.net/wp-content/uploads/bfi_thumb/ALONE-34re7d3h27texnipm6f0u8.jpg) no-repeat center top;
@@ -203,7 +209,7 @@
         right: 0;
         bottom: 0;
         margin: auto;
-        .bloc {
+        .block {
             width: 100%;
             height: auto;
             height: 100%;

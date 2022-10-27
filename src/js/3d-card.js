@@ -18,7 +18,6 @@ gsap.registerPlugin(ScrollTrigger, Draggable, Flip, MotionPathPlugin);
         $elems = $doc.getElementsByClassName("elem"),
         validPropertyPrefix = '',
         otherProperty = 'perspective(1000px)';
-    // console.log("$elems", $elems.length);
     if ($elems.length > 0) {
         var elemStyle = $elems[0].style;
         if (typeof elemStyle.webkitTransform == 'string') {
@@ -36,7 +35,7 @@ gsap.registerPlugin(ScrollTrigger, Draggable, Flip, MotionPathPlugin);
 
             for (var i = 0; i < $elems.length; i++) {
                 $elem = $elems[i];
-                $elem.style[validPropertyPrefix] = otherProperty + 'rotateY(' + degX + 'deg)  rotateX(' + degY + 'deg)';
+                $elem.style[validPropertyPrefix] = otherProperty + 'rotateY(' + (degX) + 'deg)  rotateX(' + degY + 'deg)';
             };
         });
     }
